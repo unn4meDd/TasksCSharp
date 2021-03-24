@@ -7,16 +7,17 @@ namespace Task4
         static void Main(string[] args)
         {
             int[] numbers = { 5, 7, 1, 8, 9, 4};
-            int maxNumber = 0, minNumber = 0;
-            for (int i = 0; i < numbers.Length; i++)
+            int maxNumber = 0; 
+            int minNumber = numbers[0];
+            for (int i = 1; i < numbers.Length; i++)
             {
                 if(numbers[i] > maxNumber)
                 {
                     maxNumber = numbers[i];
                 }
-                else if(numbers[i] == numbers[2])
+                if(numbers[i] < minNumber)
                 {
-                    minNumber = numbers[2];
+                    minNumber = numbers[i];
                 }
             }
             Console.Write($"Разница между максимальным - {maxNumber}, и минимальным числом - {minNumber}, равна - {maxNumber - minNumber}");
