@@ -12,13 +12,9 @@ namespace Task4
             for (int i = 1; i < numbers.Length; i++)
             {
                 if(numbers[i] > maxNumber)
-                {
                     maxNumber = numbers[i];
-                }
                 if(numbers[i] < minNumber)
-                {
                     minNumber = numbers[i];
-                }
             }
             Console.WriteLine("Максимальное число - " + maxNumber);
             Console.WriteLine("Минимальное число - " + minNumber);

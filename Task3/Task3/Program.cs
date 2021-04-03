@@ -16,9 +16,7 @@ namespace Task3
             for (int i = 0; i < length; i++)
             {
                 if (stringArray[i] == symbol)
-                {
                     wordCounter++;
-                }
             }
             Console.WriteLine($"Количество слов: {wordCounter + 1}");
             Console.ReadLine();

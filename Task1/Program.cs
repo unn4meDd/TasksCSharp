@@ -18,9 +18,7 @@ namespace Task1
             for (int i = 0; i < length; i++)
             {
                 if(stringArray[i] == symbol)
-                {
                     counter++;
-                }
             }
             char quotes = '"';
             double lengthDouble = Convert.ToDouble(length);

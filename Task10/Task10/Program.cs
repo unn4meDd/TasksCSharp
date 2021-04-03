@@ -24,7 +24,6 @@ namespace Task10
             }
             Console.WriteLine("Самая длинная фамилия - " + array[indexMax]);
             Console.WriteLine("Самая короткая фамилия - " + array[indexMin]);
-
         }
     }
 }

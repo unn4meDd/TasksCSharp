@@ -13,7 +13,6 @@ namespace Task7
 
             int length = userInput.Length;
             int counter = 0;
-            char[] strArray = userInput.ToCharArray();
             foreach (char symbol in userInput)
             {
                 if (vowels.Contains(symbol.ToString()))

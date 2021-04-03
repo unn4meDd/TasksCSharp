@@ -6,14 +6,12 @@ namespace Task6
     {
         static void Main(string[] args)
         {
-            Random rand = new Random();
-            int[] array = new int[5];
+            int[] array = { 10, 4, 60, 5 };
             int maxNumber = 0;
             int minNumber = array[0];
             Console.WriteLine("Это наш массив: ");
             for (int i = 0; i < array.Length; i++)
             {
-                array[i] = rand.Next(101);
                 Console.WriteLine(array[i]);
             }
             for (int i = 1; i < array.Length; i++)

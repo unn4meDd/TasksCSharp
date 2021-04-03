@@ -7,7 +7,7 @@ namespace Task14
         static void Main(string[] args)
         {
             string s, revs = "";
-            Console.WriteLine(" Enter string");
+            Console.Write("Enter String: ");
             s = Console.ReadLine();
             for (int i = s.Length - 1; i >= 0; i--) //String Reverse
             {
@@ -15,11 +15,11 @@ namespace Task14
             }
             if (revs == s) // Checking whether string is palindrome or not
             {
-                Console.WriteLine("String is Palindrome \n Entered String Was {0} and reverse string is {1}", s, revs);
+                Console.WriteLine("String is Palindrome\nEntered String Was {0} and reverse string is {1}", s, revs);
             }
             else
             {
-                Console.WriteLine("String is not Palindrome \n Entered String Was {0} and reverse string is {1}", s, revs);
+                Console.WriteLine("String is not Palindrome\nEntered String Was {0} and reverse string is {1}", s, revs);
             }
             Console.ReadKey();
         }
