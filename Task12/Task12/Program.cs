@@ -11,16 +11,11 @@ namespace Task12
             Random rand = new Random();
             for (int i = 0; i < array.Length; i++)
             {
-                array[i] = rand.Next(-300, 300);
-                Console.WriteLine(array[i]);
-            }
-            for (int i = 0; i < array.Length; i++)
-            {
-                if(0 < array[i] < 125)
-                {
+                array[i] = rand.Next(-100, 200);
+                if (array[i] > 0 && array[i] < 125)
                     counter++;
-                }
             }
+            Console.WriteLine(counter);
         }
     }
 }

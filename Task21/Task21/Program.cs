@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace Task15
+namespace Task21
 {
     class Program
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine("Hello World!");
         }
     }
 }

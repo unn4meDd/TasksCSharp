@@ -17,11 +17,14 @@ namespace Task18
             Triangle jpo = new Triangle();
             Triangle qwr = new Triangle();
             int userInput;
+            double maxSquare = 0;
             double[] array = { abc.square, mkx.square, cba.square, ghi.square, dpe.square, snp.square, rlx.square, bcz.square, jpo.square, qwr.square };
             Console.WriteLine("1 - take value of sides\n2 - exit");
+            Console.Write("Your change: ");
             userInput = int.Parse(Console.ReadLine());
             if (userInput == 1)
             {
+                Console.Clear();
                 Console.WriteLine("Taking value of sides for first triangle");
                 abc.EnterSides();
                 Console.Clear();
@@ -54,9 +57,12 @@ namespace Task18
                 Console.Clear();
                 Console.WriteLine("Change task: ");
                 Console.WriteLine("1 - find a square of triangles\n2 - exit");
+                Console.Write("Your change: ");
                 userInput = int.Parse(Console.ReadLine());
                 if(userInput == 1)
                 {
+                    
+                    Console.Clear();
                     abc.FindSquare();
                     mkx.FindSquare();
                     cba.FindSquare();
@@ -67,11 +73,20 @@ namespace Task18
                     bcz.FindSquare();
                     jpo.FindSquare();
                     qwr.FindSquare();
-                    Console.WriteLine("Change task: ");
+                    Console.WriteLine("\nChange task: ");
                     Console.WriteLine("1 - find a max square of triangles\n2 - exit");
+                    Console.Write("Your change: ");
                     userInput = int.Parse(Console.ReadLine());
                     if(userInput == 1)
                     {
+                        for (int i = 0; i < array.Length; i++)
+                        {
+                            if (array[i] > maxSquare)
+                            {
+                                maxSquare = array[i];
+                            }
+                        }
+                        Console.Clear();
                         abc.FindMaxSquare();
                         mkx.FindMaxSquare();
                         cba.FindMaxSquare();
@@ -85,11 +100,13 @@ namespace Task18
                     }
                     else if(userInput == 2)
                     {
+                        Console.Clear();
                         Console.ReadKey();
                     }
                 }
                 else if (userInput == 2)
                 {
+                    Console.Clear();
                     Console.ReadKey();
                 }
             }
