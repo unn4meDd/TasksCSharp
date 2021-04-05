@@ -10,7 +10,7 @@ namespace Task11
         }
         public static void InformationOfArray()
         {
-            Console.WriteLine("Введите n");
+            Console.Write("Введите количество элементов для массива: ");
             int arrayNumbers = Convert.ToInt32(Console.ReadLine());
             int[] a = new int[arrayNumbers];
             for (int i = 0; i < arrayNumbers; i++)
